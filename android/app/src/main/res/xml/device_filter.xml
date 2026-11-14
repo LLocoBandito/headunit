@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 1. Spesifik Logitech C270 (Vendor: 0x046D -> 1133, Product: 0x0825 -> 2085) -->
+    <usb-device vendor-id="1133" product-id="2085" />
+
+    <!-- 2. Kelas standar UVC (Video Streaming) -->
+    <usb-device class="14" subclass="2" />
+    <usb-device class="14" />
+
+    <!-- 3. Perangkat UVC Komposit (Miscellaneous Device Class) -->
+    <usb-device class="239" subclass="2" protocol="1" />
+
+    <!-- 4. Fallback universal untuk menangkap semua koneksi USB -->
+    <usb-device />
+</resources>
